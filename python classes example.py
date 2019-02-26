@@ -1,10 +1,10 @@
 
 class car():
 
-    wheel=5
+    wheel=5  #class variable - static
 
     def __init__(self):
-        self.brand='Toyoto'
+        self.brand='Toyoto'   # instance variable
         self.type='zeep'
         self.price=800000
 
