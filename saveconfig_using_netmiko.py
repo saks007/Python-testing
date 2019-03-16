@@ -36,3 +36,5 @@ for devices in all_devices:
     f = open("Device_" + devices['ip'] + ".txt" , "w")
     f.write(output)
     net_connect.disconnect()
+
+
