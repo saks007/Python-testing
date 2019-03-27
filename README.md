@@ -7,7 +7,7 @@ It includes practical examples to carry on day to day tasks using different pyth
 
 It listed out with different folders (PARAMIKO,NETMIKO,NAPALM,PYNTC) with code samples to choose based on the requirements..
 
-You can reach me on sakthivadivelv@gmail.com , if required for any other code samples..i will try my level best to assist you..
+You can reach me , if required for any other code samples..i will try my level best to assist you..
 
 Thanks for looking into it..Wish you the best for your python journey..
 
