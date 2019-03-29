@@ -2,9 +2,9 @@ import calc
 
 x = input('which calculator function would you like to do now? \n 1  for addition \n 2 for sub \n 3 for mul \n 4 for divition:')
 
-print x
-y = 4  # int(input('enter value for A:'))
-z = 2  # int(input('enter value for B:'))
+# print x
+y = int(input('enter value for A:'))
+z = int(input('enter value for B:'))
 
 if x == 1:
     t = calc.add(y, z)
