@@ -1,28 +1,28 @@
 import json
 from napalm import get_network_driver
 
-bgplist = {'192.168.1.1', '192.168.1.2'}
+bgplist = {"192.168.1.1", "192.168.1.2"}
 
 for ip_address in bgplist:
     print "Accessing switch:" + str(ip_address) + "\n"
-    driver = get_network_driver('ios')
-    iosvl2 = driver(ip_address, 'cisco', 'cisco')
+    driver = get_network_driver("ios")
+    iosvl2 = driver(ip_address, "cisco", "cisco")
     iosvl2.open()
-    iosvl2.load_merge_candidate(filename='ACL1.cfg')
+    iosvl2.load_merge_candidate(filename="ACL1.cfg")
     diff = iosvl2.compare_config()
     if len(diff) > 0:
-        print(diff)
+        print (diff)
         iosvl2.commit_config()
     else:
-        print 'No Acl changes required'
+        print "No Acl changes required"
         iosvl2.discard_config()
 
-    iosvl2.load_merge_candidate(filename='ospf.cfg')
+    iosvl2.load_merge_candidate(filename="ospf.cfg")
     diff = iosvl2.compare_config()
     if len(diff) > 0:
-        print(diff)
+        print (diff)
         iosvl2.commit_config()
     else:
-        print 'No OSPF changes required'
+        print "No OSPF changes required"
         iosvl2.discard_config()
     iosvl2.close()

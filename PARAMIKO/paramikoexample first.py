@@ -7,7 +7,7 @@ password = "cisco"
 
 ssh_client = paramiko.SSHClient()
 ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh_client.connect(hostname=ip_address,username=username,password=password)
+ssh_client.connect(hostname=ip_address, username=username, password=password)
 
 print "Successful connection", ip_address
 
@@ -21,10 +21,10 @@ remote_connection.send("ip address 2.2.2.2 255.255.255.255\n")
 remote_connection.send("router ospf 1\n")
 remote_connection.send("network 0.0.0.0 255.255.255.255 area 0\n")
 
-for n in range (2,21):
+for n in range(2, 21):
     print "Creating VLAN " + str(n)
-    remote_connection.send("vlan " + str(n) +  "\n")
-    remote_connection.send("name Python_VLAN " + str(n) +  "\n")
+    remote_connection.send("vlan " + str(n) + "\n")
+    remote_connection.send("name Python_VLAN " + str(n) + "\n")
     time.sleep(0.5)
 
 remote_connection.send("end\n")

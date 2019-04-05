@@ -5,7 +5,7 @@ import telnetlib
 user = raw_input("Enter your username: ")
 password = getpass.getpass()
 
-f = open ('myswitches')
+f = open("myswitches")
 
 for line in f:
     print "Configuring Switch " + (line)
@@ -20,7 +20,7 @@ for line in f:
 
     tn.write("conf t\n")
 
-    for n in range (2,26):
+    for n in range(2, 26):
         tn.write("vlan " + str(n) + "\n")
         tn.write("name Python_VLAN_" + str(n) + "\n")
 
