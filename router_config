@@ -1,0 +1,4 @@
+router eigrp 1
+net 0.0.0.0 
+no auto
+exit
