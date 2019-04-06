@@ -1,0 +1,29 @@
+Git cheatsheet: 
+============ 
+git clone 
+
+Copies a git repository from a "remote" (aka GitHub) to your local workstation 
+
+git status 
+
+Looks at the current status (obviously). Includes new and changed files, and if you are "ahead" of upstream. 
+
+git add file or directory 
+
+"adds" changes or new files to "stage" and ready to be committed (aka locked) 
+
+git commit -m message 
+
+"Locks in" a change to the repository locally. 
+
+git push 
+
+Sends (aka push) changes from your local workstation to the remote 
+
+git pull 
+
+Retrieves (aka pull) changes from remote to local. 
+
+git diff 
+
+Look at changes between current file, and last "committed" version.
