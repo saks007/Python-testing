@@ -1,0 +1,18 @@
+sudo modprobe tun
+ 
+sudo tunctl 
+ 
+sudo ifconfig tap0 192.168.43.197 netmask 255.255.255.0 up
+
+ifconfig
+ 
+
+sudo etc/init.d/networking restart
+
+
+
+genie learn arp --testbed testbed.yaml --devices R1 --output test
+
+
+genie learn interface --testbed testbed.yaml --devices R1 --output test
+

@@ -1,0 +1,41 @@
+Apr 16 11:15:04.341 HYPERVISOR: Release 0.2.20-x86/Linux (tag 2019022012)
+Apr 16 11:15:04.341 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51603.
+Apr 16 11:15:04.350 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 16 11:15:04.351 HYPERVISOR: exec_cmd: hypervisor working_dir /home/saks/GNS3/projects/testing pyats and genie/project-files/dynamips 
+Apr 16 11:15:04.351 GENERAL: working_dir=/home/saks/GNS3/projects/testing pyats and genie/project-files/dynamips
+Apr 16 11:15:04.351 HYPERVISOR: exec_cmd: hypervisor working_dir /home/saks/GNS3/projects/testing pyats and genie/project-files/dynamips/907b1c6a-f6af-4d29-b83c-c9cdcafa8310 
+Apr 16 11:15:04.351 GENERAL: working_dir=/home/saks/GNS3/projects/testing pyats and genie/project-files/dynamips/907b1c6a-f6af-4d29-b83c-c9cdcafa8310
+Apr 16 11:15:04.352 HYPERVISOR: exec_cmd: vm create R2 2 c2691 
+Apr 16 11:15:04.352 VM: VM R2 created.
+Apr 16 11:15:04.353 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5003 
+Apr 16 11:15:04.353 HYPERVISOR: exec_cmd: c2691 get_mac_addr R2 
+Apr 16 11:15:04.354 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Apr 16 11:15:04.354 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 16 11:15:04.355 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60b70574 
+Apr 16 11:15:04.356 HYPERVISOR: exec_cmd: vm set_ios R2 /home/saks/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+Apr 16 11:15:04.357 HYPERVISOR: exec_cmd: c2691 set_mac_addr R2 c002.394b.0000 
+Apr 16 11:15:04.357 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Apr 16 11:15:04.358 HYPERVISOR: exec_cmd: vm set_ram R2 192 
+Apr 16 11:15:04.358 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 16 11:15:04.359 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-4T 
+Apr 16 11:15:04.360 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 16 WIC-2T 
+Apr 16 11:15:04.360 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 32 WIC-2T 
+Apr 16 11:15:04.981 HYPERVISOR: exec_cmd: nio create_udp udp-4dcf7433-46d5-43f4-ab04-f7ac6a2b9996 10008 127.0.0.1 10009 
+Apr 16 11:15:05.195 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-4dcf7433-46d5-43f4-ab04-f7ac6a2b9996 
+Apr 16 11:15:05.195 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 16 11:17:34.920 HYPERVISOR: exec_cmd: vm create Ghost 0 c2691 
+Apr 16 11:17:34.920 VM: VM Ghost created.
+Apr 16 11:17:34.922 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/saks/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+Apr 16 11:17:34.922 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 16 11:17:34.923 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost '/home/saks/GNS3/projects/testing pyats and genie/project-files/dynamips/c2691-entservicesk9-mz.124-13b.image-192.ghost' 
+Apr 16 11:17:34.923 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 16 11:17:34.924 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Apr 16 11:17:34.925 HYPERVISOR: exec_cmd: vm start R2 
+Apr 16 11:20:08.224 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 16 11:20:08.225 HYPERVISOR: exec_cmd: vm stop R2 
+Apr 16 11:20:08.291 VM: VM R2 shutdown.
+Apr 16 11:20:08.291 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 16 13:02:32.632 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 16 13:02:32.633 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 16 13:30:33.387 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 16 13:30:33.388 HYPERVISOR: exec_cmd: vm extract_config R2 

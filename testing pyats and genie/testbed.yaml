@@ -1,0 +1,19 @@
+testbed:
+  name: genie-cli-1_default_zIaLdG
+  tacacs:
+      username: "cisco"
+  passwords:
+      tacacs: "cisco"
+      enable: "cisco"
+#      line: "cisco"
+devices:
+  R1:
+    alias: rtr1
+    os: iosxe
+    type: IOS
+    connections:
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: telnet
+        ip: 192.168.43.198
