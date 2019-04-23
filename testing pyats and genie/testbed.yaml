@@ -17,3 +17,14 @@ devices:
       console:
         protocol: telnet
         ip: 192.168.43.198
+
+  R2:
+    alias: rtr2
+    os: iosxe
+    type: IOS
+    connections:
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.43.199

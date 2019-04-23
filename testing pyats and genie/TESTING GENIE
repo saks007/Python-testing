@@ -10,9 +10,29 @@ ifconfig
 sudo etc/init.d/networking restart
 
 
+learn
+-----
 
-genie learn arp --testbed testbed.yaml --devices R1 --output test
+genie learn arp --testbed testbed.yaml --devices R1 --output test2
 
 
-genie learn interface --testbed testbed.yaml --devices R1 --output test
+genie learn interface --testbed testbed.yaml --devices R2 --output test3
+
+All devices
+-----------
+
+genie learn interface --testbed testbed.yaml  --output test4
+
+Diff
+----
+
+genie diff test2 test3
+
+Parse
+------
+
+
+genie parse "show ip ospf" --testbed testbed.yaml --devices R1 --output test5
+
+
 
